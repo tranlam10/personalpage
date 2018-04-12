@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<title>Lam Tran</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+<style>
+
+body, html {
+    height: 100%;
+}
+
+.nav {
+	background-color: transparent;
+}
+
+.black {
+	background-color: black;
+	z-index: 1000;
+	padding: 5px;
+}
+
+a {
+	color: white;
+}
+
+.homepage {
+	text-align: center;
+	padding: 12px 24px;
+	font-size: 24px;
+	letter-spacing: 4px;
+	color: white;
+	background-color: black;
+}
+
+.background1, .background2, .background3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.background1 {
+	background-image: url(images/background1.jpeg);
+	min-height: 100%;
+}
+
+.background2 {
+	background-image: url(images/whitney.jpg);
+	min-height:400px;
+	position: relative;
+}
+
+.background3 {
+	background-image: url(images/vietnam.jpg);
+	min-height: 400px;
+	position: relative;
+}
+
+.h-center {
+	text-align: center;
+}
+
+.padding-64 {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.pictures {
+	width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display-middle {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%)
+}
+
+.text {
+	font-size: 36px;
+	color: white;
+	letter-spacing: 4px;
+}
+
+.skills {
+	width: 200px;
+	height: auto;
+}
+
+.first-icon {
+  margin-left: 27%;
+  padding-right: 25px;
+}
+
+.contact {
+	color: black; 
+	font-size: 24px;
+}
+
+
+</style>
+
+<body>
+	<nav class="fixed-top">
+  			<a class="navbar-brand" href="#home">HOME</a>
+  			<a class="navbar-brand" href="#about"><i class="fa fa-user"></i>ABOUT</a>
+  			<a class="navbar-brand" href="#skills"><i class="fa fa-th"></i>SKILLS</a>
+  			<a class="navbar-brand" href="#contact"><i class="fa fa-envelope"></i>CONTACT</a>
+		</nav>
+	<div class="background1" id="home">
+		
+	  <div class="display-middle" style="white-space: nowrap;">
+	    <span class="homepage">LAM TRAN: DEVELOPER</span>
+	  </div>
+	</div>
+
+	<div class="container padding-64" id="about">
+		<h1 class="h-center">ABOUT ME</h1>
+		<p> Hello! My name is Lam Tran. I was born and raised in San Jose, California, where I have lived my whole life aside from my 4 years at the University of California, Los Angeles. I graduated from UCLA in 2013 with a Bachelor of Arts in Economics and a minor in Accouting. In my free time, I enjoy playing basketball, kickboxing, and exploring the outdoors. Check out one of my favorite hiking spots down below, Mount Whitney!</p>
+	</div>
+
+	<div class="container" style="padding-bottom: 64px;">
+		<div class="row">
+			<div class="col-sm-6"><img class="pictures" src="images/mypic.jpg" alt="My Photo"></div>
+			<div class="col-sm-6">
+				<h2 class="h-center">PROFESSIONAL GOALS</h2>
+				<p></br>
+				I​ ​am​ ​a​ ​former​ ​accountant​ ​who​ ​decided​ ​to​ ​change​ ​career​ ​paths​ ​after​ ​finding​ ​joy​ ​in​ ​writing​ ​code​ ​and​ ​building​ ​software. Everyday,​ ​I​ ​am​ ​problem-solving,​ ​coming​ ​up​ ​with​ ​unique​ ​solutions,​ ​and​ ​learning​ ​something​ ​new.​ ​I​ ​would​ ​love​ ​the opportunity​ ​to​ ​contribute​ ​and​ ​expand​ ​upon​ ​my​ ​skills,​ ​experience,​ ​and​ ​capabilities​ ​in​ ​the​ ​technology​ ​industry.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="background2" id="skills">
+		<div class="display-middle">
+    		<span class="text">SKILLS</span>
+  		</div>
+	</div>
+
+	<div class="container" id="about" style="padding-bottom: 64px;">
+		<h1 class="h-center padding-64" >Programming Languages</h1>
+		<img width="250" height="275" src="images/html2.png" alt="HTML">
+		<img class="skills" src="images/css.png" alt="CSS" style="margin-right: 40px;">
+		<img class="skills" src="images/javascript.png" alt="JavaScript">
+		<img width="400" height="auto" src="images/python.jpg" alt="Python">
+		<h1 class="h-center padding-64">Frameworks</h1>
+		<div class="frameworks">
+			<img class="first-icon" src="images/bootstrap.png" alt="Bootstrap">
+			<img width="200" height="auto" src="images/jquery.gif" alt="JQuery">
+		</div>
+	</div>
+
+	<div class="background3" id="contact">
+	  <div class="display-middle">
+	  	<span class="text">CONTACT</span>
+	  </div>
+	</div>
+
+	<div class="container" id="about" style="padding-bottom: 64px;">
+		<div class="w3-large w3-margin-bottom padding-64" style="text-align: center;">
+	        <i class="fa fa-map-marker contact"></i> San Jose, California<br>
+	        <i class="fa fa-phone contact"></i> Phone: (408) 892-1529<br>
+	        <i class="fa fa-envelope contact"></i> Email: Lam.Tran10@gmail.com<br>
+      	</div>
+      	<h1 class="h-center" >Thanks for visiting my page!</h1>
+	</div>
+</body>
